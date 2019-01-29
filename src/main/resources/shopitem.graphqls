@@ -1,8 +1,0 @@
-type Query {
-    items: [Item]
-}
-
-type Item {
-    title: String
-    amount: String
-}

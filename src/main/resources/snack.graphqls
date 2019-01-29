@@ -1,0 +1,9 @@
+type Query {
+    snacks: [Snack]
+}
+
+type Snack {
+    id: ID!
+    name: String
+    amount: String
+}
