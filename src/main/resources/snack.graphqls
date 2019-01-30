@@ -7,3 +7,7 @@ type Snack {
     name: String
     amount: String
 }
+
+type Mutation {
+    newSnack(name: String!, amount: String!) : Snack!
+}
