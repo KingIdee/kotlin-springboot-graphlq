@@ -7,8 +7,9 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection="snack")
 data class Snack (
         var name: String,
-        var amount: Double
+        var amount: Float
 ){
     @Id
-    var id: Long = 0
+    var id: String = ""
+
 }

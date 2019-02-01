@@ -5,9 +5,11 @@ type Query {
 type Snack {
     id: ID!
     name: String
-    amount: String
+    amount: Float
 }
 
 type Mutation {
-    newSnack(name: String!, amount: String!) : Snack!
+    newSnack(name: String!, amount: Float!) : Snack!
+    deleteSnack(id: ID!) : Boolean
+    updateSnack(id:ID!, amount: Float!) : Snack!
 }
