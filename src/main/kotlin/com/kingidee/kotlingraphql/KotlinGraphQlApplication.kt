@@ -18,7 +18,6 @@ fun main(args: Array<String>) {
 	runApplication<KotlinGraphQlApplication>(*args)
 }
 
-// no autowired
 @Bean
 fun snackQuery(snackRepository: SnackRepository,mongoOperations: MongoOperations): SnackQueryResolver {
 	return SnackQueryResolver(snackRepository,mongoOperations)
