@@ -18,14 +18,15 @@ fun main(args: Array<String>) {
 	runApplication<KotlinGraphQlApplication>(*args)
 }
 
+// no autowired
 @Bean
-fun snackQuery(snackRepository: SnackRepository,reviewQueryResolver: ReviewQueryResolver): SnackQueryResolver {
-	return SnackQueryResolver(snackRepository,reviewQueryResolver)
+fun snackQuery(snackRepository: SnackRepository,mongoOperations: MongoOperations): SnackQueryResolver {
+	return SnackQueryResolver(snackRepository,mongoOperations)
 }
 
 @Bean
-fun reviewQuery(mongoOperations: MongoOperations,reviewRepository: ReviewRepository): ReviewQueryResolver {
-	return ReviewQueryResolver(mongoOperations,reviewRepository)
+fun reviewQuery(mongoOperations: MongoOperations): ReviewQueryResolver {
+	return ReviewQueryResolver(mongoOperations)
 }
 
 @Bean
