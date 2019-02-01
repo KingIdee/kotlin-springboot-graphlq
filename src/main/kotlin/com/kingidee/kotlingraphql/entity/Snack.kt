@@ -1,4 +1,4 @@
-package com.kingidee.KotlinGraphQL.entity
+package com.kingidee.kotlingraphql.entity
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
@@ -11,5 +11,8 @@ data class Snack (
 ){
     @Id
     var id: String = ""
+
+    @Transient
+    var reviews:List<Review> = ArrayList()
 
 }

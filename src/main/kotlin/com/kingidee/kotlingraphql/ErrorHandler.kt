@@ -1,4 +1,4 @@
-package com.kingidee.KotlinGraphQL
+package com.kingidee.kotlingraphql
 
 import graphql.ErrorType
 import graphql.GraphQLError

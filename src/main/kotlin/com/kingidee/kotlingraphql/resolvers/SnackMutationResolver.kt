@@ -1,8 +1,8 @@
-package com.kingidee.KotlinGraphQL.resolvers
+package com.kingidee.kotlingraphql.resolvers
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver
-import com.kingidee.KotlinGraphQL.entity.Snack
-import com.kingidee.KotlinGraphQL.repository.SnackRepository
+import com.kingidee.kotlingraphql.entity.Snack
+import com.kingidee.kotlingraphql.repository.SnackRepository
 import org.springframework.stereotype.Component
 import java.util.*
 

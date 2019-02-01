@@ -1,4 +1,4 @@
-package com.kingidee.KotlinGraphQL
+package com.kingidee.kotlingraphql
 
 import org.junit.Test
 import org.junit.runner.RunWith

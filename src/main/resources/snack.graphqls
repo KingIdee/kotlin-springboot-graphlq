@@ -6,6 +6,7 @@ type Snack {
     id: ID!
     name: String
     amount: Float
+    reviews: [Review]
 }
 
 type Mutation {
