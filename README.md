@@ -2,7 +2,7 @@
 A project that shows how to build GraphQL APIs with Kotlin and SpringBoot
 
 # Setting up
-The recommended IDE for this project is [Intellij IDEA](https://www.jetbrains.com/idea/). After clonning the repo, open the project on the IDE, and run the it using the green run icon at the toolbar of the IDE or you can use this command on the root directory:
+The recommended IDE for this project is [Intellij IDEA](https://www.jetbrains.com/idea/). After clonning the repo, open the project on the IDE, and run the it using the green run icon at the toolbar of the IDE. You can also run using this command on the root directory:
 
 ```
 For Mac
