@@ -11,18 +11,18 @@ import org.springframework.stereotype.Component
 
 
 @Component
-class SnackQueryResolver (val snackRepository: SnackRepository,
-                          private val mongoOperations: MongoOperations) : GraphQLQueryResolver {
+class SnackQueryResolver(val snackRepository: SnackRepository,
+                         private val mongoOperations: MongoOperations) : GraphQLQueryResolver {
 
-    fun snacks(): List<Snack>{
+    fun snacks(): List<Snack> {
         val list = snackRepository.findAll()
-        for(item in list){
+        for (item in list) {
             item.reviews = getReviews(snackId = item.id)
         }
         return list
     }
 
-    private fun getReviews(snackId:String) : List<Review> {
+    private fun getReviews(snackId: String): List<Review> {
         val query = Query()
         query.addCriteria(Criteria.where("snackId").`is`(snackId))
         return mongoOperations.find(query, Review::class.java)
